@@ -17,3 +17,11 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debu
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\CapaEntidad.pdb
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmCategoria.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmCompras.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmProducto.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmReportes.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuarios.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmVentas.resources
