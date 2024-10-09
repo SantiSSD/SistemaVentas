@@ -4,18 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CapaEntidad;
-using System.Reflection;
-using System.Data.SqlClient;
-using System.Data;
+
 namespace CapaDatos
 {
-    public class CD_Permiso
+    public class CD_Rol
     {
-        public List<Permiso> Listar(int idusuario)
+        public List<Rol> Listar()
         {
             // Lista donde se almacenarán los objetos Usuario obtenidos de la base de datos
-            List<Permiso> lista = new List<Permiso>();
+            List<Rol> lista = new List<Rol>();
 
             // Instancia de la clase AccesoDatos para realizar la conexión y las consultas
             AccesoDatos datos = new AccesoDatos();
@@ -24,17 +21,12 @@ namespace CapaDatos
             {
 
                 StringBuilder query = new StringBuilder();
-                query.AppendLine("select p.IdRol, p.NombreMenu from PERMISO p");
-                query.AppendLine("inner join ROL r on r.IdRol = p.IdRol");
-                query.AppendLine("inner join USUARIO u on u.IdRol = r.IdRol");
-                query.AppendLine("where u.IdUsuario = @idusuario");
+                query.AppendLine("select IdRol, Descripcion from ROL");
+              
 
                 // Usar tu método setearConsulta en lugar de SqlCommand
                 datos.setearConsulta(query.ToString());
-
-                // Parámetros en tu método de setear consulta (si no lo tienes, podrías añadir un método para parámetros)
-                datos.setearParametro("@idusuario", idusuario);
-
+              
                 // Ejecutar la consulta
                 datos.ejecutarLectura();
 
@@ -42,13 +34,13 @@ namespace CapaDatos
                 // Leer los resultados
                 while (datos.Lector.Read())
                 {
-                    Permiso permiso = new Permiso
+                    Rol rol = new Rol
                     {
-                        oRol = new Rol() {IdRol =Convert.ToInt32(datos.Lector["IdRol"]) },
-                        NombreMenu = datos.Lector["NombreMenu"].ToString()
+                        IdRol = Convert.ToInt32(datos.Lector["IdRol"]),
+                        Descripción = datos.Lector["Descripcion"].ToString(),
                     };
 
-                    lista.Add(permiso);
+                    lista.Add(rol);
                 }
             }
             catch (Exception ex)
@@ -64,6 +56,8 @@ namespace CapaDatos
             // Retornamos la lista de usuarios obtenidos
             return lista;
         }
+
+
+
     }
 }
-

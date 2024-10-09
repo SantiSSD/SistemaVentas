@@ -6,19 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace CapaNegocio
 {
-    public class CN_Permiso
+    public class CN_Rol
     {
-        private CD_Permiso objcd_permiso = new CD_Permiso();
-        public List<Permiso> Listar(int IdUsuario)
+        private CD_Rol objcd_rol = new CD_Rol();
+        public List<Rol> Listar()
         {
-            return objcd_permiso.Listar(IdUsuario);
+            return objcd_rol.Listar();
 
         }
 
 
 
     }
+
+
 }
+

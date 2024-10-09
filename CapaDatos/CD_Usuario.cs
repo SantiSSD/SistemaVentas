@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using CapaEntidad;
+using System.Reflection;
 namespace CapaDatos
 {
     public class CD_Usuario
@@ -23,8 +24,12 @@ namespace CapaDatos
             try
             {
                 // Preparamos la consulta SQL para obtener los registros de la tabla "Usuarios"
-                string query = "SELECT IdUsuario, Documento, NombreCompleto, Correo, Clave, Estado FROM usuario";
-                datos.setearConsulta(query);
+                StringBuilder query = new StringBuilder () ;
+                query.AppendLine("SELECT u.IdUsuario,  u.Documento, u.NombreCompleto, u.Correo, u.Clave, u.Estado, r.IdRol, r.Descripcion FROM usuario u");
+                query.AppendLine("inner join rol r on r.IdRol = u.IdRol");
+                           
+
+                datos.setearConsulta(query.ToString());
                 datos.ejecutarLectura();
 
                 // Recorreremos el SqlDataReader, leyendo cada fila obtenida de la base de datos
@@ -37,6 +42,9 @@ namespace CapaDatos
                     usuario.Correo = datos.Lector["Correo"].ToString();
                     usuario.Clave = datos.Lector["Clave"].ToString();
                     usuario.Estado = Convert.ToBoolean(datos.Lector["Estado"]);
+                    usuario.oRol = new Rol() { IdRol = Convert.ToInt32(datos.Lector["IdRol"]) , Descripcion = datos.Lector["Descripcion"].ToString() };
+
+
 
                     // Agregamos el objeto Usuario a la lista
                     lista.Add(usuario);
