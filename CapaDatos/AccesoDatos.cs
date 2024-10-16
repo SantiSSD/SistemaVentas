@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -67,6 +68,25 @@ namespace CapaDatos
         public void setearParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
+        }
+
+        public void setearParametro(string nombre, SqlDbType tipo, ParameterDirection direccion = ParameterDirection.Input, int tamaño = 0)
+        {
+            SqlParameter parametro = new SqlParameter(nombre, tipo);
+            parametro.Direction = direccion;
+
+            // Si el tipo es VARCHAR y se especifica un tamaño, lo aplicamos
+            if (tipo == SqlDbType.VarChar && tamaño > 0)
+            {
+                parametro.Size = tamaño;
+            }
+
+            comando.Parameters.Add(parametro);
+        }
+
+        public SqlParameter ObtenerParametro(string nombre)
+        {
+            return comando.Parameters[nombre];
         }
 
         public void cerrarConexion()

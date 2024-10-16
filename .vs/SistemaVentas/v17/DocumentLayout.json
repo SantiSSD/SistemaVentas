@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16EF8360-F7E9-42BA-8380-5AD01B7E2A0D}|CapaEntidad\\CapaEntidad.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capaentidad\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16EF8360-F7E9-42BA-8380-5AD01B7E2A0D}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capadatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\utilidades\\opcioncombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\utilidades\\opcioncombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D8B9D07-E67C-4F0B-86D1-36C71674BE3D}|CapaNegocio\\CapaNegocio.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capanegocio\\cn_rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D8B9D07-E67C-4F0B-86D1-36C71674BE3D}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capadatos\\cd_rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capadatos\\cd_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaEntidad\\Rol.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\Rol.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaEntidad\\Rol.cs",
-              "RelativeToolTip": "CapaEntidad\\Rol.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T19:03:36.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CD_Usuario.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Usuario.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Usuario.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAkwCcAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T18:54:33.396Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -84,76 +42,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CN_Rol.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaNegocio\\CN_Rol.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\CN_Rol.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaNegocio\\CN_Rol.cs",
-              "RelativeToolTip": "CapaNegocio\\CN_Rol.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "DocumentIndex": 2,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\AccesoDatos.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\AccesoDatos.cs",
+              "RelativeToolTip": "CapaDatos\\AccesoDatos.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAtwFQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:17:59.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CD_Permiso.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Permiso.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Permiso.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Permiso.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Permiso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:01:32.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CD_Rol.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Rol.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Rol.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Rol.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Rol.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:01:09.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OpcionCombo.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Utilidades\\OpcionCombo.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Utilidades\\OpcionCombo.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Utilidades\\OpcionCombo.cs",
-              "RelativeToolTip": "CapaPresentacion\\Utilidades\\OpcionCombo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T01:55:17.971Z",
+              "WhenOpened": "2024-10-16T00:07:21.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "CD_Usuario.cs",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Usuario.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Usuario.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAkwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T23:53:22.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "frmUsuarios.cs",
               "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\frmUsuarios.cs",
               "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
               "RelativeToolTip": "CapaPresentacion\\frmUsuarios.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAowCsAAABEAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAUwH4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T22:50:16.529Z",
+              "WhenOpened": "2024-10-15T23:18:39.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\frmUsuarios.cs",
               "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaPresentacion\\frmUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T22:15:23.773Z",
+              "WhenOpened": "2024-10-15T23:18:31.593Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {

@@ -37,7 +37,7 @@ namespace CapaDatos
                     Rol rol = new Rol
                     {
                         IdRol = Convert.ToInt32(datos.Lector["IdRol"]),
-                        Descripción = datos.Lector["Descripcion"].ToString(),
+                        Descripcion = datos.Lector["Descripcion"].ToString(),
                     };
 
                     lista.Add(rol);
