@@ -130,9 +130,9 @@ namespace CapaDatos
                 datos.setearParametro("@IdRol", obj.oRol.IdRol);  // Asegúrate de pasar el ID del rol
                 datos.setearParametro("@Estado", obj.Estado);
                 datos.setearParametro("@Respuesta", SqlDbType.Int, ParameterDirection.Output);
-                datos.setearParametro("@Mensaje", SqlDbType.VarChar, ParameterDirection.Output);
+                datos.setearParametro("@Mensaje", SqlDbType.VarChar, ParameterDirection.Output, 500);                                                                                                                                                                                                   
 
-                datos.ejecutarLectura();
+              
 
                 datos.ejecutarAccion();
 
@@ -169,8 +169,6 @@ namespace CapaDatos
                 datos.setearParametro("@IdUsuario", obj.IdUsuario);
                 datos.setearParametro("@Respuesta", SqlDbType.Int, ParameterDirection.Output);
                 datos.setearParametro("@Mensaje", SqlDbType.VarChar, ParameterDirection.Output, 500);
-
-                datos.ejecutarLectura();
 
                 datos.ejecutarAccion();
 

@@ -82,7 +82,7 @@ namespace CapaDatos
             }
 
             comando.Parameters.Add(parametro);
-        }
+        }                           
 
         public SqlParameter ObtenerParametro(string nombre)
         {

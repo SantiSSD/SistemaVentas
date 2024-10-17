@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capadatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capadatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F17381-AF00-49F5-9043-033333F712BC}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -48,20 +48,20 @@
               "RelativeDocumentMoniker": "CapaDatos\\AccesoDatos.cs",
               "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\AccesoDatos.cs",
               "RelativeToolTip": "CapaDatos\\AccesoDatos.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAtwFQAAAAJAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAswFQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T00:07:21.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CD_Usuario.cs",
               "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
               "RelativeDocumentMoniker": "CapaDatos\\CD_Usuario.cs",
               "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaDatos\\CD_Usuario.cs",
               "RelativeToolTip": "CapaDatos\\CD_Usuario.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAkwFwAAAAAAAAA",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAUwKsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:53:22.278Z",
               "EditorCaption": ""
@@ -74,14 +74,14 @@
               "RelativeDocumentMoniker": "CapaPresentacion\\frmUsuarios.cs",
               "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
               "RelativeToolTip": "CapaPresentacion\\frmUsuarios.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAUwH4AAAApAAAA",
+              "ViewState": "AQIAACQBAAAAAAAAAAAEwDoBAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T23:18:39.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\frmUsuarios.cs",

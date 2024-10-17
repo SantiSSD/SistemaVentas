@@ -60,7 +60,7 @@ namespace CapaNegocio
         {
 
             Mensaje = string.Empty;
-
+      
 
             if (obj.Documento == "")
             {

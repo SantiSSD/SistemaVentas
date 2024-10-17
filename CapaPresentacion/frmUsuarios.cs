@@ -102,30 +102,67 @@ namespace CapaPresentacion
             };
 
 
-            int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
 
-            if (idusuariogenerado != 0)
+            if (objusuario.IdUsuario == 0)
             {
-                dgvData.Rows.Add(new object[]
-                {
-                    "",
-                    idusuariogenerado,
-                    txtDocumento.Text,
-                    txtNombreCompleto.Text,
-                    txtCorreo.Text,
-                    txtClave.Text,
-                    ((OpcionCombo)cboRol.SelectedItem).Valor.ToString(),
-                    ((OpcionCombo)cboRol.SelectedItem).Texto.ToString(),
-                    ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString(),
-                    ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString(),
-                });
 
-                Limpiar();
+                int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
+
+                if (idusuariogenerado != 0)
+                {
+                    dgvData.Rows.Add(new object[]
+                    {
+                        "",
+                        idusuariogenerado,
+                        txtDocumento.Text,
+                        txtNombreCompleto.Text,
+                        txtCorreo.Text,
+                        txtClave.Text,
+                        ((OpcionCombo)cboRol.SelectedItem).Valor.ToString(),
+                        ((OpcionCombo)cboRol.SelectedItem).Texto.ToString(),
+                        ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString(),
+                        ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString(),
+                    });
+
+                    Limpiar();
+
+                }
+                else
+                {
+                    MessageBox.Show(mensaje);
+                }
             }
             else
             {
-                MessageBox.Show(mensaje);
+                bool resultado = new CN_Usuario().Editar(objusuario, out mensaje);
+
+                if (resultado)
+                {
+                    DataGridViewRow row = dgvData.Rows[Convert.ToInt32(txtIndice.Text)];
+                    row.Cells["Id"].Value = txtId.Text;
+                    row.Cells["Documento"].Value = txtDocumento.Text;
+                    row.Cells["NombreCompleto"].Value = txtNombreCompleto.Text;
+                    row.Cells["Correo"].Value = txtCorreo.Text;
+                    row.Cells["Clave"].Value = txtClave.Text;
+                    row.Cells["IdRol"].Value = ((OpcionCombo)cboRol.SelectedItem).Valor.ToString();
+                    row.Cells["Rol"].Value = ((OpcionCombo)cboRol.SelectedItem).Texto.ToString();
+                    row.Cells["EstadoValor"].Value = ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString();
+                    row.Cells["Estado"].Value = ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString();
+
+
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje);
+                }
             }
+
+
+
+
+
+
 
 
 
@@ -143,6 +180,8 @@ namespace CapaPresentacion
             txtConfirmarClave.Text = ""; // Vaciar el campo
             cboRol.SelectedIndex = 0; // Seleccionar el primer ítem de la lista
             cboEstado.SelectedIndex = 0; // Seleccionar el primer ítem de la lista
+            txtDocumento.Select();
+
         }
 
         private void dgvData_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -220,6 +259,61 @@ namespace CapaPresentacion
 
 
 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtId.Text) != 0)
+            {
+                if (MessageBox.Show("¿Deseas eliminar este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string mensaje = string.Empty;
+                    Usuario objusuario = new Usuario()
+                    {
+                        IdUsuario = Convert.ToInt32(txtId.Text)
+                    };
+                    bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
+
+                    if (respuesta)
+                    {
+                        dgvData.Rows.RemoveAt(Convert.ToInt32(txtIndice.Text));
+
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string columnaFiltro = ((OpcionCombo)cboBusqueda.SelectedItem).Valor.ToString();
+
+            if (dgvData.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvData.Rows)
+                {
+                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtBusqueda.Text.Trim().ToUpper()))
+
+                        row.Visible = true;
+
+                    else
+
+                        row.Visible = false;
+
+                }
+            }
+        }
+
+        private void btnLimpiarBuscador_Click(object sender, EventArgs e)
+        {
+            txtBusqueda.Text = "";
+            foreach (DataGridViewRow row in dgvData.Rows)
+            {
+                row.Visible = true;
+            }
         }
     }
 }
