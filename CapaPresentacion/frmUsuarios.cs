@@ -245,19 +245,9 @@ namespace CapaPresentacion
 
                     }
 
-
-
-
-
                 }
 
-
-
             }
-
-
-
-
 
         }
 
@@ -314,6 +304,11 @@ namespace CapaPresentacion
             {
                 row.Visible = true;
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
