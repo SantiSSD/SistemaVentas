@@ -44,7 +44,6 @@ namespace CapaPresentacion
                 cboBusqueda.ValueMember = "Valor";
                 cboBusqueda.SelectedIndex = 0;
 
-                //MOSTRAR TODOS LOS USUARIOS
                 List<Categoria> lista = new CN_Categoria().Listar();
 
                 foreach (Categoria usuario in lista)
@@ -73,35 +72,38 @@ namespace CapaPresentacion
             {
                 string mensaje = string.Empty;
 
+                int idCategoria = 0; // Declarar variable para el ID
+
+                // Intentar convertir el valor de txtId.Text a un entero
+                if (!int.TryParse(txtId.Text, out idCategoria))
+                {
+                    idCategoria = 0; // Si no se puede convertir, asignar 0 por defecto
+                }
 
                 Categoria obj = new Categoria()
                 {
-                    IdCategoria = Convert.ToInt32(txtId.Text),
+                    IdCategoria = idCategoria,
                     Descripcion = txtDescripcion.Text,
-                    Estado = Convert.ToInt32(((OpcionCombo)cboEstado.SelectedItem).Valor) == 1 ? true : false
-
+                    Estado = Convert.ToInt32(((OpcionCombo)cboEstado.SelectedItem).Valor) == 1
                 };
-
-
 
                 if (obj.IdCategoria == 0)
                 {
-
+                    // Llamar al método Registrar si es un nuevo registro
                     int idgenerado = new CN_Categoria().Registrar(obj, out mensaje);
 
                     if (idgenerado != 0)
                     {
                         dgvData.Rows.Add(new object[]
                         {
-                        "",
-                        idgenerado,
-                        txtDescripcion.Text,
-                        ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString(),
-                        ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString(),
+                "",
+                idgenerado,
+                txtDescripcion.Text,
+                ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString(),
+                ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString(),
                         });
 
                         Limpiar();
-
                     }
                     else
                     {
@@ -110,6 +112,7 @@ namespace CapaPresentacion
                 }
                 else
                 {
+                    // Llamar al método Editar si es un registro existente
                     bool resultado = new CN_Categoria().Editar(obj, out mensaje);
 
                     if (resultado)
@@ -119,7 +122,6 @@ namespace CapaPresentacion
                         row.Cells["Descripcion"].Value = txtDescripcion.Text;
                         row.Cells["EstadoValor"].Value = ((OpcionCombo)cboEstado.SelectedItem).Valor.ToString();
                         row.Cells["Estado"].Value = ((OpcionCombo)cboEstado.SelectedItem).Texto.ToString();
-
 
                         Limpiar();
                     }

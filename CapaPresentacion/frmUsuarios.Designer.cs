@@ -183,7 +183,7 @@
             // 
             this.cboRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboRol.FormattingEnabled = true;
-            this.cboRol.Location = new System.Drawing.Point(12, 319);
+            this.cboRol.Location = new System.Drawing.Point(15, 319);
             this.cboRol.Name = "cboRol";
             this.cboRol.Size = new System.Drawing.Size(209, 21);
             this.cboRol.TabIndex = 10;
@@ -192,7 +192,7 @@
             // 
             this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(12, 368);
+            this.cboEstado.Location = new System.Drawing.Point(15, 368);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(209, 21);
             this.cboEstado.TabIndex = 11;
@@ -201,7 +201,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(9, 352);
+            this.label8.Location = new System.Drawing.Point(12, 352);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 9;
@@ -218,7 +218,7 @@
             this.btnGuardar.IconColor = System.Drawing.Color.White;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 18;
-            this.btnGuardar.Location = new System.Drawing.Point(12, 395);
+            this.btnGuardar.Location = new System.Drawing.Point(15, 395);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(212, 23);
             this.btnGuardar.TabIndex = 12;
