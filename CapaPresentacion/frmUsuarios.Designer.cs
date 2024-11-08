@@ -116,21 +116,21 @@
             // 
             this.txtDocumento.Location = new System.Drawing.Point(12, 73);
             this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Size = new System.Drawing.Size(209, 20);
+            this.txtDocumento.Size = new System.Drawing.Size(215, 20);
             this.txtDocumento.TabIndex = 4;
             // 
             // txtNombreCompleto
             // 
             this.txtNombreCompleto.Location = new System.Drawing.Point(12, 123);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(209, 20);
+            this.txtNombreCompleto.Size = new System.Drawing.Size(215, 20);
             this.txtNombreCompleto.TabIndex = 5;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(12, 172);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(209, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(215, 20);
             this.txtCorreo.TabIndex = 6;
             // 
             // txtClave
@@ -138,7 +138,7 @@
             this.txtClave.Location = new System.Drawing.Point(12, 222);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
-            this.txtClave.Size = new System.Drawing.Size(209, 20);
+            this.txtClave.Size = new System.Drawing.Size(215, 20);
             this.txtClave.TabIndex = 8;
             // 
             // label5
@@ -166,7 +166,7 @@
             this.txtConfirmarClave.Location = new System.Drawing.Point(12, 270);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
             this.txtConfirmarClave.PasswordChar = '*';
-            this.txtConfirmarClave.Size = new System.Drawing.Size(209, 20);
+            this.txtConfirmarClave.Size = new System.Drawing.Size(215, 20);
             this.txtConfirmarClave.TabIndex = 8;
             // 
             // label7
@@ -185,7 +185,7 @@
             this.cboRol.FormattingEnabled = true;
             this.cboRol.Location = new System.Drawing.Point(15, 319);
             this.cboRol.Name = "cboRol";
-            this.cboRol.Size = new System.Drawing.Size(209, 21);
+            this.cboRol.Size = new System.Drawing.Size(212, 21);
             this.cboRol.TabIndex = 10;
             // 
             // cboEstado
@@ -194,7 +194,7 @@
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Location = new System.Drawing.Point(15, 368);
             this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(209, 21);
+            this.cboEstado.Size = new System.Drawing.Size(212, 21);
             this.cboEstado.TabIndex = 11;
             // 
             // label8
