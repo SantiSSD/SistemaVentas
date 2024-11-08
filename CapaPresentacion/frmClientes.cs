@@ -31,10 +31,6 @@ namespace CapaPresentacion
             cboEstado.DisplayMember = "Texto";
             cboEstado.ValueMember = "Valor";
             cboEstado.SelectedIndex = 0;
-
-            List<Rol> listaRol = new CN_Rol().Listar();
-
-
             cboBusqueda.Items.Clear();
             foreach (DataGridViewColumn columna in dgvData.Columns)
             {
