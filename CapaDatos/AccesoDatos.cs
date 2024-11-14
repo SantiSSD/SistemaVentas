@@ -50,7 +50,29 @@ namespace CapaDatos
                 throw ex;
             }
         }
-
+        public int ejecutarAccionConResultado()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                if (conexion.State != ConnectionState.Open)
+                {
+                    conexion.Open();
+                }
+                return comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al ejecutar la acción en la base de datos.", ex);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
+        }
         public void ejecutarAccion()
         {
             comando.Connection = conexion;
@@ -62,6 +84,13 @@ namespace CapaDatos
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+        public void setearParametroBinario(string nombre, byte[] valor)
+        {
+            if (comando != null)
+            {
+                comando.Parameters.Add(nombre, SqlDbType.VarBinary).Value = valor;
             }
         }
 
@@ -82,8 +111,15 @@ namespace CapaDatos
             }
 
             comando.Parameters.Add(parametro);
-        }                           
+        }
+        public void setearParametro(string nombre, SqlDbType tipo, byte[] valor, ParameterDirection direccion = ParameterDirection.Input)
+        {
+            SqlParameter parametro = new SqlParameter(nombre, tipo);
+            parametro.Direction = direccion;
+            parametro.Value = valor;
 
+            comando.Parameters.Add(parametro);
+        }
         public SqlParameter ObtenerParametro(string nombre)
         {
             return comando.Parameters[nombre];
@@ -98,5 +134,5 @@ namespace CapaDatos
     }
 }
 
-    
+
 

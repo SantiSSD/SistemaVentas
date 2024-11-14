@@ -54,3 +54,4 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debu
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\System.Memory.xml
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\System.Numerics.Vectors.xml
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
