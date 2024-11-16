@@ -5,9 +5,9 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\bin\Debug\Cap
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\bin\Debug\CapaDatos.pdb
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\bin\Debug\CapaEntidad.pdb
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.Properties.Resources.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.GenerateResource.cache
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.dll
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.pdb
-D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.Properties.Resources.resources
-D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.GenerateResource.cache

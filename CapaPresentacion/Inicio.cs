@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaNegocio;
 using CapaEntidad;
 using FontAwesome.Sharp;
+using DocumentFormat.OpenXml.Presentation;
 
 namespace CapaPresentacion
 {
@@ -21,40 +22,40 @@ namespace CapaPresentacion
 
         public Inicio(Usuario objUsuario = null)
         {
-            if (objUsuario == null )
+            if (objUsuario == null)
                 usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
-            else                 
-            usuarioActual = objUsuario;
-            
+            else
+                usuarioActual = objUsuario;
+
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.Sizable; // Permitir redimensionamiento
+            this.MinimumSize = new Size(800, 600); // Tamaño mínimo del formulario
+            this.Resize += Inicio_Resize; // Manejar el evento Resize
         }
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-           List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
+            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
 
-            foreach (IconMenuItem iconMenu in Menu.Items) 
+            foreach (IconMenuItem iconMenu in Menu.Items)
             {
                 bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconMenu.Name);
-                if (encontrado == false) 
+                if (!encontrado)
                 {
-                 iconMenu.Visible = false;
-                
+                    iconMenu.Visible = false;
                 }
-            
             }
-            
+
             lblUsuario.Text = usuarioActual.NombreCompleto;
         }
-
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
             if (MenuActivo != null)
             {
-                MenuActivo.BackColor = Color.White;
+                MenuActivo.BackColor = Color.FromArgb(31, 30, 68);
             }
-            menu.BackColor = Color.Silver;
+            menu.BackColor = Color.Purple;
             MenuActivo = menu;
 
             if (FormularioActivo != null)
@@ -65,13 +66,21 @@ namespace CapaPresentacion
             FormularioActivo = formulario;
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.SteelBlue;
+            formulario.Dock = DockStyle.Fill; // Ajuste automático al tamaño del contenedor
+            formulario.BackColor = Color.FromArgb(31, 30, 68);
 
             Contenedor.Controls.Add(formulario);
-
+            Contenedor.Tag = formulario;
             formulario.Show();
-        
+        }
+
+        private void Inicio_Resize(object sender, EventArgs e)
+        {
+            // Ajustar el formulario activo al nuevo tamaño del contenedor
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Dock = DockStyle.Fill;
+            }
         }
 
 
@@ -102,7 +111,7 @@ namespace CapaPresentacion
 
         private void SubMenuRegistrarCompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(MenuCompras, new frmCompras());
+            AbrirFormulario(MenuCompras, new frmCompras(usuarioActual));
         }
 
         private void SubMenuVerDetalleCompras_Click(object sender, EventArgs e)
@@ -129,5 +138,8 @@ namespace CapaPresentacion
         {
             AbrirFormulario(MenuMantenedor, new frmNegocio());
         }
+
+   
     }
 }
+
