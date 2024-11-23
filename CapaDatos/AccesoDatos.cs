@@ -86,6 +86,34 @@ namespace CapaDatos
                 throw ex;
             }
         }
+
+        public object ejecutarEscalar()
+        {
+            object valor = null;
+            comando.Connection = conexion; // Asegúrate de asociar la conexión al comando.
+
+            try
+            {
+                if (conexion.State != ConnectionState.Open)
+                {
+                    conexion.Open(); // Abre la conexión si no está abierta.
+                }
+                valor = comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al ejecutar la consulta escalar: " + ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close(); // Cierra la conexión después de ejecutar.
+                }
+            }
+            return valor;
+        }
+
         public void setearParametroBinario(string nombre, byte[] valor)
         {
             if (comando != null)
@@ -104,7 +132,6 @@ namespace CapaDatos
             SqlParameter parametro = new SqlParameter(nombre, tipo);
             parametro.Direction = direccion;
 
-            // Si el tipo es VARCHAR y se especifica un tamaño, lo aplicamos
             if (tipo == SqlDbType.VarChar && tamaño > 0)
             {
                 parametro.Size = tamaño;

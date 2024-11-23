@@ -201,10 +201,6 @@ namespace CapaPresentacion
                 e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
-
-
-
-
         }
 
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
