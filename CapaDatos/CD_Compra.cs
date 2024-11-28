@@ -1,6 +1,7 @@
 ﻿using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
@@ -57,7 +58,7 @@ namespace CapaDatos
                 datos.setearParametro("TipoDocumento", obj.TipoDocumento);
                 datos.setearParametro("NumeroDocumento", obj.NumeroDocumento);
                 datos.setearParametro("MontoTotal", obj.MontoTotal);
-                datos.setearParametro("DetalleCompra", DetalleCompra); 
+                datos.setearParametro("DetalleCompra", DetalleCompra);
                 datos.setearParametro("@Resultado", SqlDbType.Int, ParameterDirection.Output);
                 datos.setearParametro("@Mensaje", SqlDbType.VarChar, ParameterDirection.Output, 500);
 
@@ -78,7 +79,112 @@ namespace CapaDatos
 
             return Respuesta;
         }
-    }
-}
 
+        public Compra ObtenerCompra(string numero)
+        {
+            Compra obj = new Compra();
+
+            {
+                List<Usuario> lista = new List<Usuario>();
+
+                AccesoDatos datos = new AccesoDatos();
+
+                try
+                {
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("SELECT c.IdCompra,");
+                    query.AppendLine("u.NombreCompleto, ");
+                    query.AppendLine("pr.Documento, pr.RazonSocial,");
+                    query.AppendLine("c.TipoDocumento,c.NumeroDocumento,c.MontoTotal,convert(char(10), c.FechaRegistro, 103)[FechaRegistro]");
+                    query.AppendLine("from COMPRA c");
+                    query.AppendLine("inner join USUARIO u on u.IdUsuario = c.IdUsuario");
+                    query.AppendLine("inner join PROVEEDOR pr on pr.IdProveedor = c.IdProveedor");
+                    query.AppendLine("where c.NumeroDocumento = @numero");
+
+
+                    datos.setearConsulta(query.ToString());
+                    datos.setearParametro("numero", numero);
+                    datos.ejecutarLectura();
+
+                    while (datos.Lector.Read())
+                    {
+                        obj = new Compra();
+                        {
+                            obj.IdCompra = Convert.ToInt32(datos.Lector["IdCompra"]);
+                            obj.oUsuario = new Usuario() { NombreCompleto = datos.Lector["NombreCompleto"].ToString() };
+                            obj.oProveedor = new Proveedor() { Documento = datos.Lector["Documento"].ToString(), RazonSocial = datos.Lector["RazonSocial"].ToString() };
+                            obj.TipoDocumento = datos.Lector["TipoDocumento"].ToString();
+                            obj.NumeroDocumento = datos.Lector["NumeroDocumento"].ToString();
+                            obj.MontoTotal = Convert.ToDecimal(datos.Lector["MontoTotal"].ToString());
+                            obj.FechaRegistro = datos.Lector["FechaRegistro"].ToString();
+                        }
+                        //Usuario usuario = new Usuario();
+                        //usuario.IdUsuario = Convert.ToInt32(datos.Lector["IdUsuario"]);
+                        //usuario.Documento = datos.Lector["Documento"].ToString();
+                        //usuario.NombreCompleto = datos.Lector["NombreCompleto"].ToString();
+                        //usuario.Correo = datos.Lector["Correo"].ToString();
+                        //usuario.Clave = datos.Lector["Clave"].ToString();
+                        //usuario.Estado = Convert.ToBoolean(datos.Lector["Estado"]);
+                        //usuario.oRol = new Rol() { IdRol = Convert.ToInt32(datos.Lector["IdRol"]), Descripcion = datos.Lector["Descripcion"].ToString() };
+
+                        //lista.Add(usuario);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+                    datos.cerrarConexion();
+                }
+
+            }
+                return obj;            
+        }
+        public List<Detalle_Compra> ObtenerDetalleCompra(int idcompra)
+        {
+            List<Detalle_Compra> oLista = new List<Detalle_Compra>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                StringBuilder query = new StringBuilder();
+
+                query.AppendLine("SELECT p.Nombre, dc.PrecioCompra, dc.Cantidad, dc.MontoTotal");
+                query.AppendLine("FROM DETALLE_COMPRA dc");
+                query.AppendLine("INNER JOIN PRODUCTO p ON p.IdProducto = dc.IdProducto");
+                query.AppendLine("WHERE dc.IdCompra = @idcompra");
+
+                datos.setearConsulta(query.ToString());
+                datos.setearParametro("@idcompra", idcompra);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Detalle_Compra detalle = new Detalle_Compra
+                    {
+                        oProducto = new Producto { Nombre = datos.Lector["Nombre"].ToString() },
+                        PrecioCompra = Convert.ToDecimal(datos.Lector["PrecioCompra"]),
+                        Cantidad = Convert.ToInt32(datos.Lector["Cantidad"]),
+                        MontoTotal = Convert.ToDecimal(datos.Lector["MontoTotal"])
+                    };
+
+                    oLista.Add(detalle);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el detalle de la compra: " + ex.Message);
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return oLista;
+        }
+    }
+
+}
 

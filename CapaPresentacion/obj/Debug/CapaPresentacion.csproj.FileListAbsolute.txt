@@ -57,3 +57,9 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debu
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleCompra.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\itextsharp.dll
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\itextsharp.xml
