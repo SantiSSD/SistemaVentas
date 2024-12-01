@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -145,24 +146,22 @@ namespace CapaPresentacion
                     break;
                 }
             }
-
+ 
             if (!producto_Existente)
             {
                 dgvData.Rows.Add(new object[]
                 {
-                  txtidProduto.Text,
-                  txtproducto.Text,
-                  preciocompra.ToString("0.00"),
-                  precioventa.ToString("0.00"),
-                  txtCantidad.Value.ToString(),
-                  (txtCantidad.Value * preciocompra).ToString("0.00")
-
+            txtidProduto.Text,
+            txtproducto.Text,
+            preciocompra.ToString("N2"),
+            precioventa.ToString("N2"),  
+            txtCantidad.Value.ToString(),
+            (txtCantidad.Value * preciocompra).ToString("N2") 
                 });
 
                 calcularTotal();
                 limpiarProducto();
                 txtcodproducto.Select();
-
             }
         }
         private void limpiarProducto()
@@ -233,56 +232,75 @@ namespace CapaPresentacion
 
         private void txtprecioCompra_KeyPress(object sender, KeyPressEventArgs e)
         {
+           
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false; 
+                return;
+            }
+
+           
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
             }
             else
             {
-                if (txtprecioCompra.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+         
+                if (e.KeyChar == ',')
                 {
-                    e.Handled = true;
-                }
-                else
-                {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    
+                    if (txtprecioCompra.Text.Contains(","))
                     {
-                        e.Handled = false;
+                        e.Handled = true;  
                     }
                     else
                     {
-                        e.Handled = true;
+                        e.Handled = false; 
                     }
                 }
+                else
+                {
+                    e.Handled = true;
+                }
             }
-        }
 
+        }
         private void txtPrecioVenta_KeyPress(object sender, KeyPressEventArgs e)
         {
+            
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false; 
+                return;
+            }
+
+            
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
             }
             else
             {
-                if (txtPrecioVenta.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+             
+                if (e.KeyChar == ',')
                 {
-                    e.Handled = true;
-                }
-                else
-                {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    if (txtPrecioVenta.Text.Contains(","))
                     {
-                        e.Handled = false;
+                        e.Handled = true;  
                     }
                     else
                     {
-                        e.Handled = true;
+                        e.Handled = false; 
                     }
                 }
+                else
+                {
+                    e.Handled = true;
+                }
             }
-        }
 
+        }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(txtIdproveedor.Text) == 0)
@@ -298,27 +316,38 @@ namespace CapaPresentacion
             }
 
             DataTable detalle_compra = new DataTable();
-
             detalle_compra.Columns.Add("IdProducto", typeof(int));
             detalle_compra.Columns.Add("PrecioCompra", typeof(decimal));
             detalle_compra.Columns.Add("PrecioVenta", typeof(decimal));
             detalle_compra.Columns.Add("Cantidad", typeof(int));
             detalle_compra.Columns.Add("SubTotal", typeof(decimal));
 
-
             foreach (DataGridViewRow row in dgvData.Rows)
             {
+                decimal precioCompraDecimal, precioVentaDecimal;
+
+                if (!decimal.TryParse(row.Cells["PrecioCompra"].Value.ToString(), NumberStyles.Any, new CultureInfo("es-AR"), out precioCompraDecimal))
+                {
+                    MessageBox.Show("Precio de compra tiene un formato incorrecto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+                if (!decimal.TryParse(row.Cells["PrecioVenta"].Value.ToString(), NumberStyles.Any, new CultureInfo("es-AR"), out precioVentaDecimal))
+                {
+                    MessageBox.Show("Precio de venta tiene un formato incorrecto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
                 detalle_compra.Rows.Add
                     (
                      new object[]
                      {
-                        Convert.ToInt32(row.Cells["IdProducto"].Value.ToString()),
-                        row.Cells["PrecioCompra"].Value.ToString(),
-                        row.Cells["PrecioVenta"].Value.ToString(),
-                        row.Cells["Cantidad"].Value.ToString(),
-                        row.Cells["SubTotal"].Value.ToString(),
+                Convert.ToInt32(row.Cells["IdProducto"].Value.ToString()),
+                precioCompraDecimal,
+                precioVentaDecimal,
+                row.Cells["Cantidad"].Value.ToString(),
+                row.Cells["SubTotal"].Value.ToString(),
                     });
-
             }
 
             int idcorrelativo = new CN_Compra().ObtenerCorrelativo();
@@ -326,41 +355,35 @@ namespace CapaPresentacion
 
             Compra oCompra = new Compra()
             {
-              oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
-              oProveedor = new Proveedor() {IdProveedor = Convert.ToInt32(txtIdproveedor.Text) },
-              TipoDocumento = ((OpcionCombo)cbotipoDocumento.SelectedItem).Texto,
-              NumeroDocumento = numerodocumento,
-              MontoTotal = Convert.ToDecimal(txtTotalPagar.Text)
+                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
+                oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtIdproveedor.Text) },
+                TipoDocumento = ((OpcionCombo)cbotipoDocumento.SelectedItem).Texto,
+                NumeroDocumento = numerodocumento,
+                MontoTotal = Convert.ToDecimal(txtTotalPagar.Text, new CultureInfo("es-AR"))
             };
 
-
             string mensaje = string.Empty;
+
             bool respuesta = new CN_Compra().Registrar(oCompra, detalle_compra, out mensaje);
 
             if (respuesta)
             {
                 var result = MessageBox.Show("Número de compra generada:\n" + numerodocumento + "\n\n¿Desea copiar al" +
-                    " portapapeles?", "Mensaje", MessageBoxButtons.YesNo,MessageBoxIcon.Information);
-                
+                    " portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
                 if (result == DialogResult.Yes)
                     Clipboard.SetText(numerodocumento);
-
 
                 txtIdproveedor.Text = "0";
                 txtDocProveedor.Text = "";
                 txtnombreProveedor.Text = "";
                 dgvData.Rows.Clear();
                 calcularTotal();
-
             }
             else
             {
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-
-
-
         }
     }
 }
