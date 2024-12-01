@@ -63,3 +63,4 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debu
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.xml
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debug\itextsharp.xml
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdCliente.resources
