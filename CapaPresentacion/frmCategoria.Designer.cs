@@ -59,6 +59,7 @@
             // dgvData
             // 
             this.dgvData.AllowUserToAddRows = false;
+            this.dgvData.BackgroundColor = System.Drawing.Color.White;
             this.dgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -89,7 +90,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvData.RowTemplate.Height = 28;
-            this.dgvData.Size = new System.Drawing.Size(842, 234);
+            this.dgvData.Size = new System.Drawing.Size(842, 434);
             this.dgvData.TabIndex = 44;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             this.dgvData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvData_CellPainting);
@@ -324,7 +325,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 351);
+            this.label1.Size = new System.Drawing.Size(291, 551);
             this.label1.TabIndex = 25;
             // 
             // btnBuscar
@@ -350,7 +351,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(1168, 351);
+            this.ClientSize = new System.Drawing.Size(1168, 551);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.btnLimpiarBuscador);

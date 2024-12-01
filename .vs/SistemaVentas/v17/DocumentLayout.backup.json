@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\modales\\mdcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\modales\\mdproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|d:\\proyectos personales santiago gimenez\\sistemaventas\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C165D86B-EFE8-409F-94AF-13680BCB3CCC}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,19 +75,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmCompras.cs",
-              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmCompras.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmCompras.cs",
-              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmCompras.cs",
-              "RelativeToolTip": "CapaPresentacion\\frmCompras.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAABAAAAAAAAAA==",
+              "Title": "mdProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdProducto.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdProducto.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Modales\\mdProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T18:01:18.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T18:40:05.785Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mdProveedor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdProveedor.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdProveedor.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdProveedor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Modales\\mdProveedor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:38:24.968Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmCategoria.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmCategoria.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:37:11.167Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmClientes.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmClientes.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:37:05.461Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "mdCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdCliente.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdCliente.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Modales\\mdCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Modales\\mdCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:38:50.32Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmCompras.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmCompras.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\frmCompras.cs",
@@ -51,6 +142,90 @@
               "RelativeToolTip": "CapaPresentacion\\frmCompras.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T18:01:16.158Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmProducto.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmProducto.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:35:00.197Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmProveedores.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:34:52.453Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmReportes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmReportes.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmReportes.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmReportes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmReportes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:34:51.146Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmUsuarios.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:34:36.191Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmVentas.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmVentas.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\frmVentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmVentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:29:32.342Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Inicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Inicio.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Inicio.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Inicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:27:34.25Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Login.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Login.cs",
+              "ToolTip": "D:\\Proyectos Personales Santiago Gimenez\\SistemaVentas\\CapaPresentacion\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:25:18.248Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
