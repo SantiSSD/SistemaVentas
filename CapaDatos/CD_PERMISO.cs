@@ -14,10 +14,8 @@ namespace CapaDatos
     {
         public List<Permiso> Listar(int idusuario)
         {
-            // Lista donde se almacenarán los objetos Usuario obtenidos de la base de datos
             List<Permiso> lista = new List<Permiso>();
 
-            // Instancia de la clase AccesoDatos para realizar la conexión y las consultas
             AccesoDatos datos = new AccesoDatos();
 
             try
@@ -29,17 +27,12 @@ namespace CapaDatos
                 query.AppendLine("inner join USUARIO u on u.IdRol = r.IdRol");
                 query.AppendLine("where u.IdUsuario = @idusuario");
 
-                // Usar tu método setearConsulta en lugar de SqlCommand
                 datos.setearConsulta(query.ToString());
 
-                // Parámetros en tu método de setear consulta (si no lo tienes, podrías añadir un método para parámetros)
                 datos.setearParametro("@idusuario", idusuario);
 
-                // Ejecutar la consulta
                 datos.ejecutarLectura();
 
-                // Recorreremos el SqlDataReader, leyendo cada fila obtenida de la base de datos
-                // Leer los resultados
                 while (datos.Lector.Read())
                 {
                     Permiso permiso = new Permiso
@@ -53,15 +46,13 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                throw ex; // Capturar cualquier excepción y relanzarla
+                throw ex; 
             }
             finally
             {
-                // Cerramos la conexión a la base de datos y el SqlDataReader
                 datos.cerrarConexion();
             }
 
-            // Retornamos la lista de usuarios obtenidos
             return lista;
         }
     }

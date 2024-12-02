@@ -43,7 +43,6 @@ namespace CapaDatos
                 catch (Exception ex)
                 {
                     obj = new Negocio();
-                    // Aquí puedes agregar logging o más detalles del error si es necesario
                 }
                 finally
                 {

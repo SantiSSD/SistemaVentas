@@ -90,13 +90,13 @@ namespace CapaDatos
         public object ejecutarEscalar()
         {
             object valor = null;
-            comando.Connection = conexion; // Asegúrate de asociar la conexión al comando.
+            comando.Connection = conexion; 
 
             try
             {
                 if (conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open(); // Abre la conexión si no está abierta.
+                    conexion.Open();
                 }
                 valor = comando.ExecuteScalar();
             }
@@ -108,7 +108,7 @@ namespace CapaDatos
             {
                 if (conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close(); // Cierra la conexión después de ejecutar.
+                    conexion.Close();
                 }
             }
             return valor;

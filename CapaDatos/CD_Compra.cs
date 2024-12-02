@@ -46,7 +46,6 @@ namespace CapaDatos
 
             try
             {
-                // Validar parámetros
                 if (obj == null || DetalleCompra == null)
                 {
                     Mensaje = "Los parámetros no pueden ser nulos.";
@@ -118,16 +117,7 @@ namespace CapaDatos
                             obj.MontoTotal = Convert.ToDecimal(datos.Lector["MontoTotal"].ToString());
                             obj.FechaRegistro = datos.Lector["FechaRegistro"].ToString();
                         }
-                        //Usuario usuario = new Usuario();
-                        //usuario.IdUsuario = Convert.ToInt32(datos.Lector["IdUsuario"]);
-                        //usuario.Documento = datos.Lector["Documento"].ToString();
-                        //usuario.NombreCompleto = datos.Lector["NombreCompleto"].ToString();
-                        //usuario.Correo = datos.Lector["Correo"].ToString();
-                        //usuario.Clave = datos.Lector["Clave"].ToString();
-                        //usuario.Estado = Convert.ToBoolean(datos.Lector["Estado"]);
-                        //usuario.oRol = new Rol() { IdRol = Convert.ToInt32(datos.Lector["IdRol"]), Descripcion = datos.Lector["Descripcion"].ToString() };
-
-                        //lista.Add(usuario);
+                      
                     }
                 }
                 catch (Exception ex)
