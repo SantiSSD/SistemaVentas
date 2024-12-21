@@ -43,14 +43,15 @@
             this.MenuClientes = new FontAwesome.Sharp.IconMenuItem();
             this.MenuProveedores = new FontAwesome.Sharp.IconMenuItem();
             this.MenuReportes = new FontAwesome.Sharp.IconMenuItem();
+            this.SubMenuReporteCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.SubMenuReporteVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.MenuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.SubMenuReporteCompras = new System.Windows.Forms.ToolStripMenuItem();
-            this.SubMenuReporteVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -252,7 +253,21 @@
             this.MenuReportes.Size = new System.Drawing.Size(122, 69);
             this.MenuReportes.Text = "Reportes";
             this.MenuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-             // 
+            // 
+            // SubMenuReporteCompras
+            // 
+            this.SubMenuReporteCompras.Name = "SubMenuReporteCompras";
+            this.SubMenuReporteCompras.Size = new System.Drawing.Size(166, 22);
+            this.SubMenuReporteCompras.Text = "Reporte Compras";
+            this.SubMenuReporteCompras.Click += new System.EventHandler(this.SubMenuReporteCompras_Click);
+            // 
+            // SubMenuReporteVentas
+            // 
+            this.SubMenuReporteVentas.Name = "SubMenuReporteVentas";
+            this.SubMenuReporteVentas.Size = new System.Drawing.Size(166, 22);
+            this.SubMenuReporteVentas.Text = "Reporte Ventas";
+            this.SubMenuReporteVentas.Click += new System.EventHandler(this.SubMenuReporteVentas_Click);
+            // 
             // MenuAcercaDe
             // 
             this.MenuAcercaDe.AutoSize = false;
@@ -322,25 +337,27 @@
             this.lblUsuario.TabIndex = 5;
             this.lblUsuario.Text = "lblUsuario";
             // 
-            // SubMenuReporteCompras
+            // btnSalir
             // 
-            this.SubMenuReporteCompras.Name = "SubMenuReporteCompras";
-            this.SubMenuReporteCompras.Size = new System.Drawing.Size(180, 22);
-            this.SubMenuReporteCompras.Text = "Reporte Compras";
-            this.SubMenuReporteCompras.Click += new System.EventHandler(this.SubMenuReporteCompras_Click);
-            // 
-            // SubMenuReporteVentas
-            // 
-            this.SubMenuReporteVentas.Name = "SubMenuReporteVentas";
-            this.SubMenuReporteVentas.Size = new System.Drawing.Size(180, 22);
-            this.SubMenuReporteVentas.Text = "Reporte Ventas";
-            this.SubMenuReporteVentas.Click += new System.EventHandler(this.SubMenuReporteVentas_Click);
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.btnSalir.IconColor = System.Drawing.Color.Red;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 56;
+            this.btnSalir.Location = new System.Drawing.Point(1198, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(165, 115);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 669);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Contenedor);
@@ -385,6 +402,7 @@
         private System.Windows.Forms.ToolStripMenuItem SubMenuNegocio;
         private System.Windows.Forms.ToolStripMenuItem SubMenuReporteCompras;
         private System.Windows.Forms.ToolStripMenuItem SubMenuReporteVentas;
+        private FontAwesome.Sharp.IconButton btnSalir;
     }
 }
 

@@ -66,3 +66,5 @@ D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\bin\Debu
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdCliente.resources
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleVenta.resources
 D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmReporteCompras.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmReporteVentas.resources
+D:\Proyectos Personales Santiago Gimenez\SistemaVentas\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdAcercaDe.resources

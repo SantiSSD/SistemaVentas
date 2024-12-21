@@ -70,7 +70,7 @@ namespace CapaDatos
                 try
                 {
                     StringBuilder query = new StringBuilder();
-                    datos.setearProcedimiento("sp_ReporteCompras");
+                    datos.setearProcedimiento("sp_ReporteVentas");
                     datos.setearParametro("fechainicio", fechainicio);
                     datos.setearParametro("fechafin", fechafin);
 
