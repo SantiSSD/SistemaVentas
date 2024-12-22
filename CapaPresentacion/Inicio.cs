@@ -146,17 +146,20 @@ namespace CapaPresentacion
             AbrirFormulario(MenuReportes, new frmReporteVentas());
         }
 
-        private void MenuAcercaDe_Click(object sender, EventArgs e)
-        {
-            mdAcercaDe md = new mdAcercaDe();
-            md.ShowDialog();
-        }
+        
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Desea salir?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                 this.Close();
             }
+        }
+
+        private void MenuAcercaDe_Click(object sender, EventArgs e)
+        {
+            mdAcercaDe md = new mdAcercaDe();
+            md.ShowDialog();
+
         }
     }
 }

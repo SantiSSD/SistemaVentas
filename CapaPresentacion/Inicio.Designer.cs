@@ -281,6 +281,7 @@
             this.MenuAcercaDe.Size = new System.Drawing.Size(80, 69);
             this.MenuAcercaDe.Text = "Acerca de";
             this.MenuAcercaDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.MenuAcercaDe.Click += new System.EventHandler(this.MenuAcercaDe_Click);
             // 
             // MenuTitulo
             // 
